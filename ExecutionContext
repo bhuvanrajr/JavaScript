@@ -1,0 +1,28 @@
+How a Javascript code works?
+
+Java script code uses execution conext to run its code.
+What is execution context how it works?
+
+Execution context is made up of 2 phases. 
+1. Memory Phase
+2. Code execution phase
+
+Memory Phase - JS skims through the code and allocates memory to each variable in the code 
+Code execution phase - Here exactly code is executed by running through each line of code sequentially.
+
+var n = 2;
+function Square(num){
+var ans = num*num;
+return ans;
+}
+var sqr1 = Square(n);
+var sqr2 = Square(4);
+
+Phase 1 - Memory allocation
+n = undefined.
+square = {..}
+sqr1 = undefined.
+sqr2 = undefined.
+
+Phase 2 - Code execution phase
+1. n = 2
